@@ -25,11 +25,6 @@ linkedList<T>::linkedList() : head(nullptr) {}
 template <class T>
 linkedList<T>::~linkedList() {
     Node<T>* current = head;
-    while (current != nullptr) {
-        Node<T>* toDelete = current;
-        current = current->next;
-        delete toDelete;
-    }
 }
 
 template <class T>
